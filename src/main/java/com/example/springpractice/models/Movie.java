@@ -1,14 +1,27 @@
 package com.example.springpractice.models;
 
+
+import javax.persistence.*;
+
+@Entity
+@Table(name ="movies")
 public class Movie {
 //    variables
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+    @Column(nullable = false, length = 50)
     private String title;
-
+    @Column(nullable = false)
     private String genre;
 
 
 
 // constructors
+
+
+    public Movie() {
+    }
 
     public Movie(String title, String genre) {
         this.title = title;
@@ -31,4 +44,5 @@ public class Movie {
     public void setGenre(String genre) {
         this.genre = genre;
     }
+
 }
