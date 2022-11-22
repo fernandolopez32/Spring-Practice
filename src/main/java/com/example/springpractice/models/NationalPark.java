@@ -3,7 +3,7 @@ package com.example.springpractice.models;
 import javax.persistence.*;
 
 @Entity
-@Table
+@Table(name = "national_parks")
 public class NationalPark {
 
 
