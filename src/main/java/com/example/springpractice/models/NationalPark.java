@@ -20,9 +20,10 @@ public class NationalPark {
     public NationalPark() {
     }
 
-
-
-//    setters and getters
+    public NationalPark(String name) {
+        this.name = name;
+    }
+    //    setters and getters
 
     public String getName() {
         return name;
