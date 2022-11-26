@@ -7,7 +7,7 @@
 <body>
 <h1>National Parks bro</h1>
 
-<div th:each="park : ${allParks}">
+<div class="card" th:each="park : ${allParks}">
     <h3 th:text="${park.name}" ></h3>
 </div>
 
