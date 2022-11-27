@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    color: lawngreen;
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 10rem;
+    height: 7rem;
+}

@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<head th:replace="/partials/partial.html :: head (Home)"></head>
 <body>
-<h1>National Parks bro</h1>
-
-<div class="card" th:each="park : ${allParks}">
-    <h3 th:text="${park.name}" ></h3>
-</div>
+    <h1>National Parks bro</h1>
+    <div class="card-container">
+        <div class="card"   th:each="park : ${allParks}">
+            <h3 th:text="${park.name}" ></h3>
+        </div>
+    </div>
 
 
 
